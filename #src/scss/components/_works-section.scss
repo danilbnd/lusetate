@@ -1,0 +1,112 @@
+.db-works-section {
+  padding-top: 55px;
+  padding-bottom: 91px;
+  &__title {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 36px;
+  }
+
+  &__text {
+    width: 357px;
+    line-height: 30px;
+    margin-bottom: 70px;
+    @media screen and (max-width: $small) {
+      margin-bottom: 20px;
+      width: 300px;
+    }
+  }
+
+  &__carts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: $small) {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    width: 345px;
+    height: 374px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin-right: 34px;
+    text-align: left;
+    padding: 0 70px;
+    transition: 0.3s;
+    @media screen and (max-width: $medium) {
+      padding: 0 10px;
+    }
+    @media screen and (max-width: $small) {
+      margin-right: 0;
+      margin-bottom: 20px;
+      padding: 0 30px;
+    }
+
+    & svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    & svg:hover {
+      fill: $white;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+    & a {
+      font-weight: 600;
+      text-decoration: none;
+      position: relative;
+      width: 88px;
+    }
+    &:nth-child(2) a {
+      width: 112px;
+    }
+    & a::after {
+      content: "";
+      background: $black;
+      height: 2px;
+      position: absolute;
+      bottom: -10px;
+      left: 0px;
+      width: 90%;
+    }
+
+    &:hover a::after {
+      background: $white;
+    }
+    &:hover a {
+      color: $white;
+    }
+    &:hover {
+      color: $white;
+      background: $yellow;
+      fill: $white;
+    }
+  }
+
+  &__item-title {
+    padding-top: 147px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 38px;
+    @media screen and (max-width: $medium) {
+      margin-bottom: 30px;
+      padding-top: 130px;
+    }
+  }
+
+  &__item-text {
+    line-height: 30px;
+    margin-bottom: 27px;
+    @media screen and (max-width: $medium) {
+      margin-bottom: 20px;
+    }
+  }
+}

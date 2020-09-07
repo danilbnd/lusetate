@@ -1,0 +1,151 @@
+.db-footer {
+  background: $dark-gray;
+  padding-top: 64px;
+  padding-bottom: 89px;
+  color: $white;
+
+  &__search-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+
+    @media screen and (max-width: $medium) {
+      display: block;
+      width: 100%;
+    }
+    &::after {
+      content: "";
+      background: #919eb1;
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      bottom: 84px;
+    }
+  }
+
+  &__title {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 133px;
+
+    @media screen and (max-width: $medium) {
+      margin-bottom: 33px;
+    }
+  }
+
+  &__input {
+    width: 476px;
+    height: 71px;
+    font-size: 15px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 28px;
+    color: $dark-gray;
+
+    @media screen and (max-width: $medium) {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    @media screen and (max-width: $small) {
+      width: 250px;
+      padding-left: 10px;
+    }
+  }
+}
+
+.db-footer-form {
+  width: 510px;
+  position: relative;
+
+  @media screen and (max-width: $small) {
+    width: 250px;
+  }
+  &__btn {
+    position: absolute;
+    right: 38px;
+    bottom: 20px;
+    transform: rotate(270deg);
+
+    @media screen and (max-width: $small) {
+      right: 0px;
+    }
+  }
+}
+
+.db-footer-block-nav {
+  display: flex;
+  justify-content: space-around;
+  @media screen and (max-width: $small) {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__logo {
+    color: $white;
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  &__copyrider {
+    font-family: Work Sans, sans-serif;
+    font-size: 14px;
+    color: #919eb1;
+    width: 20%;
+    margin-top: 71px;
+
+    @media screen and (max-width: $small) {
+      width: 50%;
+    }
+  }
+
+  &__luxestate {
+    margin-right: 118px;
+    @media screen and (max-width: $medium) {
+      margin-right: 18px;
+    }
+  }
+  &__company {
+    margin-right: 122px;
+    @media screen and (max-width: $medium) {
+      margin-right: 18px;
+    }
+  }
+
+  &__product {
+    margin-right: 102px;
+    @media screen and (max-width: $medium) {
+      margin-right: 18px;
+    }
+  }
+}
+.title-list {
+  width: 20%;
+  text-transform: uppercase;
+  color: #919eb1;
+}
+.list li:first-child {
+  margin-bottom: 43px;
+}
+.list li {
+  margin-bottom: 23px;
+}
+.db-footer-copyrider p {
+  margin-right: 127px;
+  width: 134px;
+  @media screen and (max-width: $medium) {
+    margin-right: 18px;
+  }
+  @media screen and (max-width: $small) {
+    margin-right: 35px;
+    margin-bottom: 30px;
+  }
+}
+.list a {
+  color: $white;
+  &:hover {
+    opacity: 0.7;
+  }
+}

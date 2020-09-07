@@ -1,0 +1,67 @@
+.db-agents-section {
+  padding-top: 64px;
+  padding-bottom: 96px;
+  background: $medium-gray;
+
+  &__title {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 38px;
+  }
+  &__text {
+    line-height: 30px;
+    width: 352px;
+    margin-bottom: 63px;
+    @media screen and (max-width: $small) {
+      width: 100%;
+    }
+  }
+}
+.db-cart__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.db-carts__item {
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+  margin-right: 30px;
+  width: 351px;
+  height: 480px;
+  background: $white;
+}
+
+.db-cart-info {
+  &__title {
+    font-weight: 600;
+  }
+
+  &__autor {
+    color: $yellow;
+    font-weight: 600;
+  }
+  &__order div {
+    display: flex;
+  }
+  &__facebook {
+    margin-right: 36px;
+    @media screen and (max-width: $small) {
+      margin-right: 25px;
+    }
+  }
+
+  &__twich {
+    margin-right: 31px;
+    @media screen and (max-width: $small) {
+      margin-right: 25px;
+    }
+  }
+}
+
+.icon svg:hover {
+  fill: $yellow;
+}
+
+.slick-track {
+  width: 100%;
+}

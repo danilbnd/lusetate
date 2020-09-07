@@ -1,0 +1,100 @@
+.db-section-statistic {
+  padding-top: 160px;
+  padding-bottom: 77px;
+  @media screen and (max-width: $medium) {
+    padding-top: 100px;
+    padding-bottom: 57px;
+  }
+  @media screen and (max-width: $small) {
+    padding-top: 60px;
+    padding-bottom: 37px;
+  }
+}
+.db-row {
+  display: flex;
+  justify-content: center;
+	align-items: center;
+	@media screen and (max-width: $medium) {
+    display: block;
+  }
+}
+.db-block-text {
+  width: 50%;
+  margin-right: 137px;
+  @media screen and (max-width: $medium) {
+		width: 100%;
+		padding: 0 20px;
+    margin-bottom: 20px;
+  }
+  @media screen and (max-width: $small) {
+    width: 100%;
+  }
+  &__title {
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0 0 70px;
+  }
+
+  &__info {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 30px;
+
+    &--one {
+      margin-bottom: 50px;
+    }
+  }
+}
+.db-block-anim-stat {
+  width: 50%;
+  @media screen and (max-width: $medium) {
+    width: 100%;
+  }
+  &__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 14px;
+    font-weight: 600;
+
+    & li {
+      display: flex;
+      flex-direction: column;
+      width: 201px;
+      height: 201px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+			background: $medium-gray;
+			
+      &:nth-child(1),
+      &:nth-child(2) {
+				margin-bottom: 29px;
+				@media screen and (max-width: $small) {
+					margin-bottom: 15px;	
+
+				}
+      }
+      &:nth-child(1),
+      &:nth-child(3) {
+				margin-right: 29px;
+				@media screen and (max-width: $large) {
+					margin-right: 25px;
+				}
+				@media screen and (max-width: $medium) {
+					margin-right: 89px;
+				}
+				@media screen and (max-width: $small) {
+					margin-right: 0;
+					margin-bottom: 15px;
+				}
+      }
+    }
+  }
+}
+.ct {
+  color: $yellow;
+  font-weight: 600;
+  font-size: 40px;
+}

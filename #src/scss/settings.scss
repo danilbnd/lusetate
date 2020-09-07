@@ -1,0 +1,80 @@
+$body-font-family: Montserrat, sans-serif;
+
+$small: 445px;
+$medium: 768px;
+$large: 1024px;
+
+$light-gray: #cacaca;
+$medium-gray: #f6f5f4;
+$dark-gray: #1f373d;
+$white: #fff;
+$black: #000000;
+$yellow: #ffcc01;
+$bg-lightblue: #96bece;
+
+*,
+*::before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font: 400 13px/1.5 $body-font-family;
+  color: $dark-gray;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+h1 {
+  font-size: 62px;
+  letter-spacing: -1.54px;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-gray;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.db-container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $yellow;
+  font-size: 13px;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid $yellow;
+  color: $yellow;
+  transition: all 0.5s ease;
+}
